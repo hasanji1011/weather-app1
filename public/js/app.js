@@ -8,6 +8,7 @@ weatherForm.addEventListener('submit', (e)=>{
     e.preventDefault();
     messageOne.textContent="Loading...";
     messageTwo.textContent="";
+    icon.setAttribute('src','')
     let location = locationInput.value;
     
     // fetch(`http://localhost:3000/weather?address=${location}`)
